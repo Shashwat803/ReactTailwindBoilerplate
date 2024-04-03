@@ -30,7 +30,7 @@ const PageFive = () => {
         <div className="mt-4">- Jacob S.</div>
       </div>
     </div>
-      <ContinueButton nextPage={nextPage}/>
+      <ContinueButton nextPage={nextPage} active={true}/>
       </div>
   );
 };

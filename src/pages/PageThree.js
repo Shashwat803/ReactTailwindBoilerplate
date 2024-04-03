@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ContinueButton from '../components/ContinueButton'
 import { useMultiStep } from '../feature/MultiStepContext'
 const PageThird = () => {
   const {nextPage} = useMultiStep()
-  const [active, setActive] = useState(false)
   return (
 <div className='flex flex-col items-center justify-start h-[100%]'>
 <div className=' flex flex-col md:flex-row items-center justify-center h-[60vh]'>
@@ -17,7 +16,7 @@ const PageThird = () => {
         skills and knowledge. You'll interact with concepts and solve fun problems in math, science, and computer science.</div>
     </div>
     </div>
-  <ContinueButton nextPage={nextPage} active={active} setActive={setActive}/>
+  <ContinueButton nextPage={nextPage} active={true} />
 </div>
   )
 }
